@@ -1,7 +1,6 @@
 // qpwm - quite power window manager.
 
 #include <X11/Xlib.h>
-#include <X11/XF86keysym.h>
 #include <X11/keysym.h>
 #include <X11/XKBlib.h>
 #include <stdlib.h>
