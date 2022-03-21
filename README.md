@@ -23,7 +23,7 @@ exec qpwm
 | `win` + `q`                | kill window            |
 | `win` + `1-6`              | desktop swap           |
 | `win` + `Shift` +`1-6`     | send window to desktop |
-| `win` + `return` (*enter*) | focus cycle            |
+| `win` + `return` (*enter*) | open terminal          |
 | `ALT` + `TAB`.             | focus cycle            |
 
 
