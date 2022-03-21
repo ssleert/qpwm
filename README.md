@@ -6,7 +6,6 @@
 ```fish
 sudo make clean install
 ```
-
 # Running qpwm
 ### add to `.xinitrc`
 ```bash
@@ -36,5 +35,5 @@ Type=Application
 | `win` + `Shift` +`1-6`     | send window to desktop |
 | `win` + `return` (*enter*) | open terminal          |
 | `ALT` + `TAB`.             | focus cycle            |
-
-
+# Screenshots of sfowm
+![sfowm](https://github.com/ssleert/qpwm/blob/main/5CqwsnNUOos.jpg?raw=true)
