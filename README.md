@@ -35,5 +35,5 @@ Type=Application
 | `win` + `Shift` +`1-6`     | send window to desktop |
 | `win` + `return` (*enter*) | open terminal          |
 | `ALT` + `TAB`.             | focus cycle            |
-# Screenshots of sfowm
+# Screenshots of qpwm
 ![sfowm](https://github.com/ssleert/qpwm/blob/main/5CqwsnNUOos.jpg?raw=true)
