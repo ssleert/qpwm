@@ -12,7 +12,7 @@ sudo make clean install
 ```bash
 exec qpwm
 ```
-If you use GDM, SDDM, LIGHTDM оr anything other display manager
+If you use GDM, SDDM, LightDM оr anything other display manager
 
 Add it in /usr/share/xsessions/qpwm.desktop 
 ```
