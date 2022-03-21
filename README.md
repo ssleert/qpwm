@@ -7,7 +7,6 @@
 sudo make clean install
 ```
 If you use GDM, SDDM, LIGHTDM оr anything other display manager
-
 Add it in /usr/share/xsessions/qpwm.desktop 
 ```
 [Desktop Entry]
