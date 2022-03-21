@@ -36,4 +36,4 @@ Type=Application
 | `win` + `return` (*enter*) | open terminal          |
 | `ALT` + `TAB`.             | focus cycle            |
 # Screenshots of qpwm
-![sfowm](https://github.com/ssleert/qpwm/blob/main/5CqwsnNUOos.jpg?raw=true)
+![sfowm](https://media.discordapp.net/attachments/955362477137362954/955362504656187392/5CqwsnNUOos.jpg?raw=true)
