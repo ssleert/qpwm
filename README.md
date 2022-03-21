@@ -7,7 +7,7 @@
 sudo make clean install
 ```
 # Running qpwm
-### add to .xinitrc
+### add to `.xinitrc`
 ```bash
 exec qpwm
 ```
