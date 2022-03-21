@@ -3,7 +3,7 @@
 ## Dependencies
 - only `xlib` (*usually `libX11`*).
 ## Installation
-```bash
+```fish
 sudo make clean install
 ```
 If you use GDM, SDDM, LIGHTDM оr anything other display manager
