@@ -1,5 +1,7 @@
 # qpwm - quite power window manager
-## it's small floating window manager in ~220 lines of C
+### it's small floating window manager in ~220 lines of C
+## Dependencies
+- only `xlib` (*usually `libX11`*).
 ## Installation
 ```bash
 sudo make clean install
@@ -10,9 +12,7 @@ sudo make clean install
 exec qpwm
 ```
 ## Default Keybindings
-
 **Window Management**
-
 | combo                      | action                 |
 | -------------------------- | -----------------------|
 | `Mouse`                    | focus under cursor     |
