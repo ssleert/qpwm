@@ -6,6 +6,15 @@
 ```bash
 sudo make clean install
 ```
+If you use GDM, SDDM, LIGHTDM оr anything other display manager
+Add it in /usr/share/xsessions/qpwm.desktop 
+```
+[Desktop Entry]
+Name=qpwm
+Comment=This session runs qpwm as window manager
+Exec=qpwm
+Type=Application
+```
 # Running qpwm
 ### add to `.xinitrc`
 ```bash
