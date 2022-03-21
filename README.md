@@ -1,5 +1,11 @@
 # qpwm - quite power window manager
 ### it's small floating window manager in ~220 lines of C
+## some features
+- Floating only.
+- Fullscreen toggle.
+- Window centering.
+- Mix of mouse and keyboard workflow.
+- Focus with cursor.
 ## Dependencies
 - only `xlib` (*usually `libX11`*).
 ## Installation
