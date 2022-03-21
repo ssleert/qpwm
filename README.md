@@ -4,7 +4,7 @@
 ```bash
 sudo make clean install
 ```
-# Running sfowm
+# Running qpwm
 ### add to .xinitrc
 ```bash
 exec qpwm
