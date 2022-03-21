@@ -6,6 +6,12 @@
 ```fish
 sudo make clean install
 ```
+
+# Running qpwm
+### add to `.xinitrc`
+```bash
+exec qpwm
+```
 If you use GDM, SDDM, LIGHTDM оr anything other display manager
 
 Add it in /usr/share/xsessions/qpwm.desktop 
@@ -15,11 +21,6 @@ Name=qpwm
 Comment=This session runs qpwm as window manager
 Exec=qpwm
 Type=Application
-```
-# Running qpwm
-### add to `.xinitrc`
-```bash
-exec qpwm
 ```
 ## Default Keybindings
 **Window Management**
