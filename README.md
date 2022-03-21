@@ -16,12 +16,12 @@ exec qpwm
 | combo                      | action                 |
 | -------------------------- | -----------------------|
 | `Mouse`                    | focus under cursor     |
-| `MOD4` + `Left Mouse`      | move window            |
-| `MOD4` + `Right Mouse`     | resize window          |
-| `MOD4` + `f`               | maximize toggle        |
-| `MOD4` + `c`               | center window          |
-| `MOD4` + `q`               | kill window            |
-| `MOD4` + `1-6`             | desktop swap           |
-| `MOD4` + `Shift` +`1-6`    | send window to desktop |
-| `MOD1` + `TAB` (*alt-tab*) | focus cycle            |
+| `win` + `Left Mouse`      | move window            |
+| `win` + `Right Mouse`     | resize window          |
+| `win` + `f`               | maximize toggle        |
+| `win` + `c`               | center window          |
+| `win` + `q`               | kill window            |
+| `win` + `1-6`             | desktop swap           |
+| `win` + `Shift` +`1-6`    | send window to desktop |
+| `ALT` + `TAB`.           | focus cycle            |
 
