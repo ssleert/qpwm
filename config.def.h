@@ -4,6 +4,9 @@
 //mod key
 #define MOD Mod4Mask
 
+//rounded corners
+#define ROUND_CORNERS 0
+
 //title bars settings
 #define TH  90
 #define TC  255 + (255<<8) + (255<<16)

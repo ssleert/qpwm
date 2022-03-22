@@ -10,7 +10,7 @@ config.h:
 	cp config.def.h config.h
 
 qpwm: qpwm.c qpwm.h config.h Makefile
-	$(CC) -O3 $(CFLAGS) -o $@ $< -lX11 $(LDFLAGS)
+	$(CC) -O3 $(CFLAGS) -o $@ $< -lX11 -lXext $(LDFLAGS)
 
 install: all
 	install -Dm755 qpwm $(DESTDIR)$(BINDIR)/qpwm
