@@ -3,12 +3,6 @@
 
 #define MOD Mod4Mask
 
-//bar stuff:
-/*
-#define GAP_SIZE bar_height
-const char* barname = "bar"; // for lemonbar
-*/
-
 const char* menu[]    = {"dmenu_run",      0};
 const char* term[]    = {"st",             0};
 
