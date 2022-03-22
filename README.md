@@ -1,6 +1,6 @@
-# qpwm - quite power window manager
-### it's small floating window manager in ~220  lines of C
-## some features (mfwm branch)
+# mfwm - more featured window manager
+### it's fucking laggy fork of qpwm
+## some features of mfwm branch
 - Floating only.
 - Support for polybar/lemonbar
 - Title bars
