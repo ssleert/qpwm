@@ -1,17 +1,22 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+//mod key
 #define MOD Mod4Mask
 
-//bar stuff:
-/*
-#define GAP_SIZE bar_height
-const char* barname = "bar"; // for lemonbar
-*/
+//title bars settings
+#define TH  90
+#define TC  255 + (255<<8) + (255<<16)
 
+//bar settings
+#define GAP_SIZE 0
+const char* barname = "bar";
+
+//apps
 const char* menu[]    = {"dmenu_run",      0};
 const char* term[]    = {"st",             0};
 
+//keys
 static struct key keys[] = {
     {MOD,      XK_q,   win_kill,   {0}},
     {MOD,      XK_c,   win_center, {0}},
