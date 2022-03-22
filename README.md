@@ -2,6 +2,11 @@
 ### it's small floating window manager in ~220 lines of C
 ## some features
 - Floating only.
+- Support for polybar/lemonbar
+- Title bars
+- Rounded corners
+- Multi-monitor setups support
+- "Tiling"
 - Fullscreen toggle.
 - Window centering.
 - Mix of mouse and keyboard workflow.
