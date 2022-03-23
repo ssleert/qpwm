@@ -1,4 +1,4 @@
-# mfwm - more featured window manager
+# mfwm - more featured qpwm fork
 ### it's fucking laggy fork of qpwm
 ## some features of mfwm branch
 - Floating only.
