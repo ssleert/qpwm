@@ -13,7 +13,7 @@
 #include "qpwm.h"
 
 static client       *list = {0}, *ws_list[10] = {0}, *cur;
-static int          ws = 1, sw, sh, wx, wy, numlock = 0;
+static int          ws = 1, sw, sh, wx, wy, numlock = 0, monitors;
 static unsigned int ww, wh;
 
 static Display      *d;
