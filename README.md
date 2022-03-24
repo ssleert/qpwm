@@ -12,22 +12,22 @@
 ```fish
 sudo make clean install
 ```
-# Running qpwm 
+# 🙏 Running qpwm 🙏
 ### add to `.xinitrc`
 ```bash
 exec qpwm
 ```
-If you use GDM, SDDM, LightDM оr anything other display manager
+If you use GDM, SDDM, LightDM оr anything other display manager 👤
 
 Add it in /usr/share/xsessions/qpwm.desktop 
 ```
 [Desktop Entry]
 Name=qpwm
-Comment=This session runs qpwm as window manager
+Comment=This session runs qpwm as window manager 
 Exec=qpwm
 Type=Application
 ```
-## Default Keybindings
+## Default Keybindings 🧳
 **Window Management**
 | combo                      | action                 |
 | -------------------------- | -----------------------|
