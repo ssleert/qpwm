@@ -1,5 +1,5 @@
-# qpwm - quite powerful window manager for X
-### 👉 it's small floating window manager from user to users 👍
+# qpwm - quite powerful window manager for X 
+### 👉 it's small floating window manager from not a programmer
 ## some features 💪
 - Floating only.
 - Fullscreen toggle.
