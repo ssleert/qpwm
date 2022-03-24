@@ -1,4 +1,4 @@
-# qpwm - quite power window manager
+# qpwm - quite powerful window manager
 ### it's small floating window manager from user to users
 ## some features
 - Floating only.
