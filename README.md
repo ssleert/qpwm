@@ -39,7 +39,7 @@ Type=Application
 | `win` + `q`                | kill window            |
 | `win` + `1-6`              | desktop swap           |
 | `win` + `Shift` +`1-6`     | send window to desktop |
-| `win` + `return` (*enter*) | open terminal          |
+| `win` + `return` (*enter*) | open terminal (st)     |
 | `ALT` + `TAB`.             | focus cycle            |
 # Screenshots of qpwm
 ![qpwm1](https://media.discordapp.net/attachments/955362477137362954/955362504656187392/5CqwsnNUOos.jpg?raw=true)
