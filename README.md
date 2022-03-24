@@ -1,5 +1,5 @@
 # qpwm - quite power window manager
-### it's small floating window manager in ~220 lines of C
+### it's small floating window manager from user to user
 ## some features
 - Floating only.
 - Fullscreen toggle.
