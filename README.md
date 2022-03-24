@@ -12,7 +12,7 @@
 ```fish
 sudo make clean install
 ```
-# rocket Running qpwm rocket
+# :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
 ```bash
 exec qpwm
