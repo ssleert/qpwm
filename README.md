@@ -1,18 +1,18 @@
-# qpwm - quite powerful window manager
-### it's small floating window manager from user to users
-## some features
+# qpwm - quite powerful window manager for X
+### 👉 it's small floating window manager from user to users 👍
+## some features 💪
 - Floating only.
 - Fullscreen toggle.
 - Window centering.
 - Mix of mouse and keyboard workflow.
 - Focus with cursor.
-## Dependencies
+## Dependencies 🧑‍💻
 - only `xlib` (*usually `libX11`*).
-## Installation
+## Installation 🕵️‍♂️
 ```fish
 sudo make clean install
 ```
-# Running qpwm
+# Running qpwm 
 ### add to `.xinitrc`
 ```bash
 exec qpwm
