@@ -1,5 +1,5 @@
 # qpwm - quite power window manager
-### it's small floating window manager from user to user
+### it's small floating window manager from user to users
 ## some features
 - Floating only.
 - Fullscreen toggle.
