@@ -46,8 +46,8 @@ Type=Application
 ![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/955533886132215878/2022-03-21_21-30.png?raw=true)
 ![qpwm3](https://cdn.discordapp.com/attachments/955362477137362954/955543502110990476/2022-03-21_22-08_1.png?raw=true)
 ![qpwm4](https://cdn.discordapp.com/attachments/955362477137362954/955544733470580776/2022-03-21_22-13.png?raw=true)
-# Thanks for code
-## - [tinywm](http://incise.org/tinywm.html)
-## - [dwm](https://dwm.suckless.org)
-## - [2bwm](https://github.com/venam/2bwm)
-## - [sowm](https://github.com/dylanaraps/sowm)
+## Thanks for code
+- [tinywm](http://incise.org/tinywm.html)
+- [dwm](https://dwm.suckless.org)
+- [2bwm](https://github.com/venam/2bwm)
+- [sowm](https://github.com/dylanaraps/sowm)
