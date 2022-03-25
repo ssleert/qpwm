@@ -1,4 +1,4 @@
-# qpwm - quite powerful window manager for X 
+# qpwm - quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
 ### 👉 it's small floating window manager from not a programmer 👍
 ## some features 💪
 - Floating only.
