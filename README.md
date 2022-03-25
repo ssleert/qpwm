@@ -13,7 +13,10 @@
 sudo make clean install
 ```
 # How to configure?
-Type make in folder of qpwm and open config.h file in your text editor. And configure!
+```bash
+make
+```
+### next, open config.h file in your text editor. And configure!
 
 # :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
