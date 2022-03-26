@@ -13,20 +13,20 @@
 sudo make clean install
 ```
 # How to configure? :tipping_hand_person:
-```bash
+```fish
 make
 ```
 ### next, open config.h file in your text editor. And configure! :zap:
 
 # :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
-```bash
+```fish
 exec qpwm
 ```
 If you use GDM, SDDM, LightDM оr anything other display manager 👤
 
 Add it in /usr/share/xsessions/qpwm.desktop 
-```
+```desktop
 [Desktop Entry]
 Name=qpwm
 Comment=This session runs qpwm as window manager 
