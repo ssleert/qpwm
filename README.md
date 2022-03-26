@@ -12,11 +12,11 @@
 ```fish
 sudo make clean install
 ```
-# How to configure?
+# How to configure? :tipping_hand_person:
 ```bash
 make
 ```
-### next, open config.h file in your text editor. And configure!
+### next, open config.h file in your text editor. And configure! :zap:
 
 # :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
@@ -53,7 +53,7 @@ Type=Application
 ![qpwm3](https://cdn.discordapp.com/attachments/955362477137362954/955543502110990476/2022-03-21_22-08_1.png?raw=true)
 ![qpwm4](https://cdn.discordapp.com/attachments/955362477137362954/955544733470580776/2022-03-21_22-13.png?raw=true)
 ![qpwm5](https://media.discordapp.net/attachments/955362477137362954/955362504656187392/5CqwsnNUOos.jpg?raw=true)
-## Thanks for code
+## Thanks for code :speech_balloon:
 - [tinywm](http://incise.org/tinywm.html)
 - [dwm](https://dwm.suckless.org)
 - [2bwm](https://github.com/venam/2bwm)
