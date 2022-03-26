@@ -51,6 +51,7 @@ Type=Application
 | person          | action           |
 | --------------- | -----------------|
 | xZecora         | some fixes       |
+| OpenSky         | screenshot       |
 
 # :fire: Screenshots of qpwm :fire:
 ![qpwm1](https://cdn.discordapp.com/attachments/955362477137362954/957063386154295346/2022-03-26_02-12.png?raw=true)
