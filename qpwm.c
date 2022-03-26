@@ -1,11 +1,15 @@
 // qpwm - quite power window manager.
 
 #include <X11/XKBlib.h>
+#include <X11/extensions/Xinerama.h>
 #include <X11/Xlib.h>
 #include <X11/keysym.h>
 #include <signal.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <unistd.h>
+
+#define NUM_WS 10
 
 #define win (client *t = 0, *c = list; c && t != list->prev; t = c, c = c->next)
 #define ws_save(W) ws_list[W] = list
@@ -41,6 +45,7 @@ typedef struct client {
   Window w;
 } client;
 
+int multimonitor_action(int action);
 void button_press(XEvent *e);
 void button_release(XEvent *e);
 void configure_request(XEvent *e);
@@ -62,12 +67,13 @@ void win_prev(const Arg arg);
 void win_next(const Arg arg);
 void win_to_ws(const Arg arg);
 void ws_go(const Arg arg);
+bool exists_win(Window w);
 void quit(const Arg arg);
 
 static int xerror() { return 0; }
 
-static client *list = {0}, *ws_list[10] = {0}, *cur;
-static int ws = 1, sw, sh, wx, wy, numlock = 0;
+static client *list = {0}, *ws_list[NUM_WS] = {0}, *cur;
+static int ws = 1, sw, sh, wx, wy, numlock = 0, monitors;
 static unsigned int ww, wh;
 
 static Display *d;
@@ -122,6 +128,8 @@ void notify_motion(XEvent *e) {
                     wy + (mouse.button == 1 ? yd : 0),
                     MAX(1, ww + (mouse.button == 3 ? xd : 0)),
                     MAX(1, wh + (mouse.button == 3 ? yd : 0)));
+
+	win_size(cur->w, &cur->wx, &cur->wx, &cur->ww, &cur->wh);
 }
 
 void key_press(XEvent *e) {
@@ -192,12 +200,38 @@ void win_kill(const Arg arg) {
     XKillClient(d, cur->w);
 }
 
+int multimonitor_action (int action) { // action = 0 -> center; action = 1 -> fs
+    if (!XineramaIsActive(d)) return 1;
+    XineramaScreenInfo *si = XineramaQueryScreens(d, &monitors);
+    for (int i = 0; i < monitors; i++) {
+        if ((cur->wx + (cur->ww/2) >= (unsigned int)si[i].x_org
+                && cur->wx + (cur->ww/2) < (unsigned int)si[i].x_org + si[i].width)
+            && ( cur->wy + (cur->wh/2) >= (unsigned int)si[i].y_org
+                && cur->wy + (cur->wh/2) < (unsigned int)si[i].y_org + si[i].height)) {
+            if (action)
+                XMoveResizeWindow(d, cur->w,
+                                  si[i].x_org, si[i].y_org,
+                                  si[i].width, si[i].height);
+            else
+                XMoveWindow(d, cur->w,
+                            si[i].x_org + ((si[i].width - ww)/2),
+                            si[i].y_org + ((si[i].height -wh)/2));
+            break;
+        }
+    }
+    return 0;
+}
+
 void win_center(const Arg arg) {
   if (!cur)
     return;
 
   win_size(cur->w, &(int){0}, &(int){0}, &ww, &wh);
-  XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
+    if (multimonitor_action(0)) {
+        XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
+    }
+
+    win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
 }
 
 void win_fs(const Arg arg) {
@@ -206,7 +240,9 @@ void win_fs(const Arg arg) {
 
   if ((cur->f = cur->f ? 0 : 1)) {
     win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
-    XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
+        if(multimonitor_action(1)) {
+          XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
+        }
 
   } else {
     XMoveResizeWindow(d, cur->w, cur->wx, cur->wy, cur->ww, cur->wh);
@@ -285,9 +321,23 @@ void configure_request(XEvent *e) {
                                      .stack_mode = ev->detail});
 }
 
+bool exists_win(Window w) {
+    int tmp = ws;
+    for (int i = 0; i < NUM_WS; ++i) {
+        if (i == tmp) continue;
+        ws_sel(i);
+        for win if (c->w == w) {
+            ws_sel(tmp);
+            return true;
+        }
+    }
+    ws_sel(tmp);
+    return false;
+}
+
 void map_request(XEvent *e) {
   Window w = e->xmaprequest.window;
-
+	if (exists_win(w)) return;
   XSelectInput(d, w, StructureNotifyMask | EnterWindowMask);
   win_size(w, &wx, &wy, &ww, &wh);
   win_add(w);
