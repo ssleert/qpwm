@@ -47,6 +47,11 @@ Type=Application
 | `win` + `Shift` +`1-6`     | send window to desktop |
 | `win` + `return` (*enter*) | open terminal (st)     |
 | `ALT` + `TAB`.             | focus cycle            |
+# Thanks!
+| person          | action           |
+| --------------- | -----------------|
+| xZecora         | some fixes       |
+
 # :fire: Screenshots of qpwm :fire:
 ![qpwm1](https://cdn.discordapp.com/attachments/955362477137362954/957063386154295346/2022-03-26_02-12.png?raw=true)
 ![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/957119114235764746/2022-03-26_06-20.png?raw=true)
