@@ -63,8 +63,6 @@ void win_next(const Arg arg);
 void win_to_ws(const Arg arg);
 void ws_go(const Arg arg);
 void quit(const Arg arg);
-void sigterm(int unused);
-void sighup(int unused);
 
 static int xerror() { return 0; }
 
@@ -75,7 +73,6 @@ static unsigned int ww, wh;
 static Display *d;
 static XButtonEvent mouse;
 static Window root;
-static int restart = 0;
 static int running = 1;
 
 static void (*events[LASTEvent])(XEvent *e) = {
@@ -352,19 +349,8 @@ void input_grab(Window root) {
 
 void quit(const Arg arg) {
   if (!arg.i) {
-    restart = 1;
     running = 0;
   }
-}
-
-void sighup(int unused) {
-  Arg a = {.i = 1};
-  quit(a);
-}
-
-void sigterm(int unused) {
-  Arg a = {.i = 0};
-  quit(a);
 }
 
 int main(void) {
