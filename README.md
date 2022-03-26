@@ -49,10 +49,11 @@ Type=Application
 | `ALT` + `TAB`.             | focus cycle            |
 # :fire: Screenshots of qpwm :fire:
 ![qpwm1](https://cdn.discordapp.com/attachments/955362477137362954/957063386154295346/2022-03-26_02-12.png?raw=true)
-![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/955533886132215878/2022-03-21_21-30.png?raw=true)
-![qpwm3](https://cdn.discordapp.com/attachments/955362477137362954/955543502110990476/2022-03-21_22-08_1.png?raw=true)
-![qpwm4](https://cdn.discordapp.com/attachments/955362477137362954/955544733470580776/2022-03-21_22-13.png?raw=true)
-![qpwm5](https://media.discordapp.net/attachments/955362477137362954/955362504656187392/5CqwsnNUOos.jpg?raw=true)
+![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/957119114235764746/2022-03-26_06-20.png?raw=true)
+![qpwm3](https://cdn.discordapp.com/attachments/955362477137362954/955533886132215878/2022-03-21_21-30.png?raw=true)
+![qpwm4](https://cdn.discordapp.com/attachments/955362477137362954/955543502110990476/2022-03-21_22-08_1.png?raw=true)
+![qpwm5](https://cdn.discordapp.com/attachments/955362477137362954/955544733470580776/2022-03-21_22-13.png?raw=true)
+![qpwm6](https://media.discordapp.net/attachments/955362477137362954/955362504656187392/5CqwsnNUOos.jpg?raw=true)
 ## Thanks for code :speech_balloon:
 - [tinywm](http://incise.org/tinywm.html)
 - [dwm](https://dwm.suckless.org)
