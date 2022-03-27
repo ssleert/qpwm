@@ -1,6 +1,6 @@
 # qpwm - quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
 ### 👉 it's small floating window manager from not a programmer 👍
-#### if you have a multimonitor setup go ([here](https://github.com/ssleert/qpwm/tree/qpwm2))
+#### if you have a multimonitor setup go [here](https://github.com/ssleert/qpwm/tree/qpwm2)
 ## some features 💪
 - Floating only.
 - Fullscreen toggle.
