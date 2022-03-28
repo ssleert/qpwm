@@ -1,7 +1,10 @@
-# qpwm - quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
-### 👉 it's small floating window manager from not a programmer 👍
-#### if you have a multimonitor setup go [here](https://github.com/ssleert/qpwm/tree/qpwm2)
-## some features 💪
+# qpwm 
+Quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
+<hr>
+
+### It's small floating window manager from not a programmer 👍
+#### If you have a multimonitor setup go [here](https://github.com/ssleert/qpwm/tree/qpwm2)
+## Some features 💪
 - Floating only.
 - Fullscreen toggle.
 - Window centering.
@@ -36,16 +39,17 @@ cd qpwm
 sudo make clean install
 ```
 # How to configure? :tipping_hand_person:
-### type ``make`` in qpwm dir
-### next open ``config.h`` file in your text editor. And configure! :zap:
-# :rocket: Running qpwm :rocket:
-### add to `.xinitrc`
+### Type ``make`` in qpwm dir
+### Next open ``config.h`` file in your text editor. And configure! :zap:
+# Running qpwm :rocket:
+
+### Add this to `.xinitrc`:
 ```fish
 exec qpwm
 ```
 If you use ``GDM``, ``SDDM``, ``LightDM`` оr anything other display manager 👤
 
-Add it in /usr/share/xsessions/qpwm.desktop 
+Add this to `/usr/share/xsessions/qpwm.desktop`:
 ```desktop
 [Desktop Entry]
 Name=qpwm
@@ -68,7 +72,7 @@ Type=Application
 | `win` + `return` (*enter*) | open terminal (st)     |
 | `ALT` + `TAB`.             | focus cycle            |
 # Thanks!
-| person          | action           |
+| Person          | Action           |
 | --------------- | -----------------|
 | xZecora         | some fixes       |
 | OpenSky         | screenshots      |
