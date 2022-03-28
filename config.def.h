@@ -1,11 +1,21 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+// mod key
+// Mod4Mask - win
+// Mod1Mask - alt
 #define MOD Mod4Mask
 
+// menu
+// rofi or dmenu
 const char *menu[] = {"dmenu_run", 0};
+
+// terminal 
+// st by default
+// write any other if necessary
 const char *term[] = {"st", 0};
 
+// action bindings
 static struct key keys[] = {
     {MOD, XK_q, win_kill, {0}},
     {MOD, XK_c, win_center, {0}},
@@ -17,7 +27,8 @@ static struct key keys[] = {
     {MOD, XK_d, run, {.com = menu}},
     {MOD, XK_Return, run, {.com = term}},
     {MOD | ShiftMask, XK_q, quit, {0}},
-
+    
+// workspaces bindings
     {MOD, XK_1, ws_go, {.i = 1}},
     {MOD | ShiftMask, XK_1, win_to_ws, {.i = 1}},
     {MOD, XK_2, ws_go, {.i = 2}},
