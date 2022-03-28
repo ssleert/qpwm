@@ -43,7 +43,7 @@ sudo make clean install
 ```fish
 exec qpwm
 ```
-If you use GDM, SDDM, LightDM оr anything other display manager 👤
+If you use ``GDM``, ``SDDM``, ``LightDM`` оr anything other display manager 👤
 
 Add it in /usr/share/xsessions/qpwm.desktop 
 ```desktop
