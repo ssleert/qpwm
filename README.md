@@ -11,7 +11,16 @@
 - `xlib` (*usually `libX11`*).
 - `gcc` (*for compile*)
 - `make` (*for make*)
-## Installation 🕵️‍♂️
+## Installation of dependencies
+### for debian based
+```fish
+sudo apt install gcc make libx11-dev
+```
+### for arch based
+```fish
+sudo pacman -Sy gcc make libx11
+```
+## Installation of qpwm 🕵️‍♂️
 ```fish
 git clone https://github.com/ssleert/qpwm.git
 cd qpwm
@@ -20,7 +29,6 @@ sudo make clean install
 # How to configure? :tipping_hand_person:
 ### type ``make`` in qpwm dir
 ### next open ``config.h`` file in your text editor. And configure! :zap:
-
 # :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
 ```fish
@@ -55,7 +63,6 @@ Type=Application
 | --------------- | -----------------|
 | xZecora         | some fixes       |
 | OpenSky         | screenshots      |
-
 # :fire: Screenshots of qpwm :fire:
 ![qpwm1](https://cdn.discordapp.com/attachments/955362477137362954/957063386154295346/2022-03-26_02-12.png?raw=true)
 ![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/957119114235764746/2022-03-26_06-20.png?raw=true)
