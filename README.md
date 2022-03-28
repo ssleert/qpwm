@@ -20,12 +20,12 @@ sudo apt install gcc make libx11-dev
 ```fish
 sudo pacman -Sy gcc make libx11
 ```
-### for RPM based (like Fedora or OpenSUSE)
-#### for Fedora
+### for RPM based <img src="https://avatars.githubusercontent.com/u/33972111?s=280&v=4?raw=true" width="20px"> (like Fedora or OpenSUSE)
+#### for Fedora <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fedora_logo.svg/1024px-Fedora_logo.svg.png?raw=true" width="20px">
 ```fish
 sudo dnf install gcc make libX11-devel
 ```
-#### for OpenSUSE
+#### for OpenSUSE <img src="https://en.opensuse.org/images/4/44/Button-filled-colour.png?raw=true" width="20px">
 ```fish
 sudo zypper install gcc make libX11-devel
 ```
