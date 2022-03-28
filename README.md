@@ -16,10 +16,8 @@ cd qpwm
 sudo make clean install
 ```
 # How to configure? :tipping_hand_person:
-```fish
-make
-```
-### next, open config.h file in your text editor. And configure! :zap:
+### type ``make`` in qpwm dir
+### next open ``config.h`` file in your text editor. And configure! :zap:
 
 # :rocket: Running qpwm :rocket:
 ### add to `.xinitrc`
