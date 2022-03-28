@@ -12,15 +12,15 @@
 - `gcc` (*for compile*)
 - `make` (*for make*)
 ## Installation of dependencies
-### for Debian based <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png?raw=true" width="20px"> (like Ubuntu or mint)
+### for Debian based <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png?raw=true" width="20px"> (*like Ubuntu or mint*)
 ```fish
 sudo apt install gcc make libx11-dev
 ```
-### for Arch based <img src="https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png?raw=true" width="20px"> (like Manjaro or EndeavourOS)
+### for Arch based <img src="https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png?raw=true" width="20px"> (*like Manjaro or EndeavourOS*)
 ```fish
 sudo pacman -Sy gcc make libx11
 ```
-### for RPM based <img src="https://avatars.githubusercontent.com/u/33972111?s=280&v=4?raw=true" width="20px"> (like Fedora or OpenSUSE)
+### for RPM based <img src="https://avatars.githubusercontent.com/u/33972111?s=280&v=4?raw=true" width="20px"> (*like Fedora or OpenSUSE*)
 #### for Fedora <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fedora_logo.svg/1024px-Fedora_logo.svg.png?raw=true" width="20px">
 ```fish
 sudo dnf install gcc make libX11-devel
