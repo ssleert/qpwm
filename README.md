@@ -12,11 +12,11 @@
 - `gcc` (*for compile*)
 - `make` (*for make*)
 ## Installation of dependencies
-### for debian based
+### for debian based <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png?raw=true" width="20px"> (like Ubuntu or mint)
 ```fish
 sudo apt install gcc make libx11-dev
 ```
-### for arch based
+### for arch based <img src="https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png?raw=true" width="20px"> (like Manjaro or EndeavourOS)
 ```fish
 sudo pacman -Sy gcc make libx11
 ```
