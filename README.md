@@ -11,6 +11,8 @@
 - only `xlib` (*usually `libX11`*).
 ## Installation 🕵️‍♂️
 ```fish
+git clone https://github.com/ssleert/qpwm.git
+cd qpwm
 sudo make clean install
 ```
 # How to configure? :tipping_hand_person:
