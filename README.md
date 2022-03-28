@@ -7,8 +7,10 @@
 - Window centering.
 - Mix of mouse and keyboard workflow.
 - Focus with cursor.
-## Dependencies 🧑‍💻
-- only `xlib` (*usually `libX11`*).
+## Dependencies for build 🧑‍💻
+- `xlib` (*usually `libX11`*).
+- `gcc` (*for compile*)
+- `make` (*for make*)
 ## Installation 🕵️‍♂️
 ```fish
 git clone https://github.com/ssleert/qpwm.git
