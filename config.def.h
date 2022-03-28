@@ -3,7 +3,8 @@
 //  / /_/ / /_/ / |/ |/ / / / / / /
 //  \__, / .___/|__/|__/_/ /_/ /_/ 
 //    /_/_/      
-// qpwm in mind
+//
+//          qpwm in mind
 
 #ifndef CONFIG_H
 #define CONFIG_H
