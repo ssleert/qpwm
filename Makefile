@@ -19,5 +19,3 @@ clean:
 	rm -f qpwm *.o
 	
 .PHONY: all install clean
-
--mfpmath=sse -Ofast -flto -march=native -funroll-loops
