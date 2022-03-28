@@ -14,20 +14,20 @@
 ## Installation of dependencies
 ### for Debian based <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/1200px-Openlogo-debianV2.svg.png?raw=true" width="20px"> (*like Ubuntu or mint*)
 ```fish
-sudo apt install gcc make libx11-dev
+sudo apt install gcc make libx11-dev git
 ```
 ### for Arch based <img src="https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png?raw=true" width="20px"> (*like Manjaro or EndeavourOS*)
 ```fish
-sudo pacman -Sy gcc make libx11
+sudo pacman -Sy gcc make libx11 git
 ```
 ### for RPM based <img src="https://avatars.githubusercontent.com/u/33972111?s=280&v=4?raw=true" width="20px"> (*like Fedora or OpenSUSE*)
 #### for Fedora <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fedora_logo.svg/1024px-Fedora_logo.svg.png?raw=true" width="20px">
 ```fish
-sudo dnf install gcc make libX11-devel
+sudo dnf install gcc make libX11-devel git
 ```
 #### for OpenSUSE <img src="https://en.opensuse.org/images/4/44/Button-filled-colour.png?raw=true" width="20px">
 ```fish
-sudo zypper install gcc make libX11-devel
+sudo zypper install gcc make libX11-devel git
 ```
 ## Installation of qpwm 🕵️‍♂️
 ```fish
