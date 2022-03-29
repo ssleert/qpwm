@@ -1,5 +1,5 @@
 # qpwm 
-Quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
+quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
 <hr>
 
 ### It's small floating window manager from not a programmer 👍
