@@ -76,6 +76,8 @@ Type=Application
 | --------------- | -----------------|
 | xZecora         | some fixes       |
 | OpenSky         | screenshots      |
+| justleoo        | fix readme       |
+
 # :fire: Screenshots of qpwm :fire:
 ![qpwm1](https://cdn.discordapp.com/attachments/955362477137362954/957063386154295346/2022-03-26_02-12.png?raw=true)
 ![qpwm2](https://cdn.discordapp.com/attachments/955362477137362954/957119114235764746/2022-03-26_06-20.png?raw=true)
