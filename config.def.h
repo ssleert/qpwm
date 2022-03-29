@@ -14,7 +14,7 @@
 // Mod1Mask - alt
 #define MOD Mod4Mask
 
-// menu
+// app launcher
 // rofi or dmenu
 const char *menu[] = {"dmenu_run", 0};
 
