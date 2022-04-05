@@ -1,4 +1,4 @@
-// qpwm - quite power window manager.
+// qpwm - quite powerful window manager.
 
 #include <X11/XKBlib.h>
 #include <X11/Xlib.h>
