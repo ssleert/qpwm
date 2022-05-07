@@ -2,10 +2,7 @@
 
 ![qpwm5](https://cdn.discordapp.com/attachments/955362477137362954/957797487303860255/2022-03-28_02-58.png?raw=true)
 ## quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
-<hr>
-
 ### It's small floating window manager from not a programmer 👍
-#### If you have a multimonitor setup go [here](https://github.com/ssleert/qpwm/tree/qpwm2)
 ## Some features 💪
 - Floating only.
 - Fullscreen toggle.
