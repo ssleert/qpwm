@@ -1,4 +1,4 @@
-CFLAGS += -std=c99 -mfpmath=sse -Ofast -flto -march=native -funroll-loops -Wall -Wextra -pedantic -Wold-style-declaration
+CFLAGS += -std=c99 -Ofast -flto -march=native -funroll-loops -Wall -Wextra -pedantic -Wold-style-declaration
 CFLAGS += -Wmissing-prototypes -Wno-unused-parameter
 PREFIX ?= /usr
 BINDIR ?= $(PREFIX)/local/bin
