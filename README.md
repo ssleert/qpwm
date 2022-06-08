@@ -1,7 +1,7 @@
 <h1 align="center">qpwm</h1>
 
 ![qpwm5](https://cdn.discordapp.com/attachments/955362477137362954/957797487303860255/2022-03-28_02-58.png?raw=true)
-## quite powerful window manager for X <img src="https://github.com/0xMrNight/0xMrNight/blob/main/assets/wave.gif?raw=true" width="28px">
+## quite powerful window manager for X ♒
 ### It's small floating window manager from not a programmer 👍
 ## Some features 💪
 - Floating only.
