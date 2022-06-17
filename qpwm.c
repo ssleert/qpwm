@@ -8,15 +8,15 @@
 #include <unistd.h>
 
 #define win (client *t = 0, *c = list; c && t != list->prev; t = c, c = c->next)
-#define ws_save(W) ws_list[W] = list
-#define ws_sel(W) list = ws_list[ws = W]
+#define WS_SAVE(W) ws_list[W] = list
+#define WS_SEL(W) list = ws_list[ws = W]
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
-#define win_size(W, gx, gy, gw, gh)                                            \
+#define WIN_SIZE(W, gx, gy, gw, gh)                                            \
   XGetGeometry(d, W, &(Window){0}, gx, gy, gw, gh, &(unsigned int){0},         \
                &(unsigned int){0})
 
-#define mod_clean(mask)                                                        \
+#define MOD_CLEAN(mask)                                                        \
   (mask & ~(numlock | LockMask) &                                              \
    (ShiftMask | ControlMask | Mod1Mask | Mod2Mask | Mod3Mask | Mod4Mask |      \
     Mod5Mask))
@@ -101,11 +101,12 @@ void notify_destroy(XEvent *e) {
 }
 
 void notify_enter(XEvent *e) {
-  while (XCheckTypedEvent(d, EnterNotify, e))
-    ;
+  while (XCheckTypedEvent(d, EnterNotify, e));
 
-    for
-      win if (c->w == e->xcrossing.window) win_focus(c);
+  for (client *t = 0, *c = list; c && t != list->prev; t = c, c = c->next) {
+    if (c->w == e->xcrossing.window)
+        win_focus(c);
+  }
 }
 
 void notify_motion(XEvent *e) {
@@ -129,7 +130,7 @@ void key_press(XEvent *e) {
 
   for (unsigned int i = 0; i < sizeof(keys) / sizeof(*keys); ++i)
     if (keys[i].keysym == keysym &&
-        mod_clean(keys[i].mod) == mod_clean(e->xkey.state))
+        MOD_CLEAN(keys[i].mod) == MOD_CLEAN(e->xkey.state))
       keys[i].function(keys[i].arg);
 }
 
@@ -137,7 +138,7 @@ void button_press(XEvent *e) {
   if (!e->xbutton.subwindow)
     return;
 
-  win_size(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
+  WIN_SIZE(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
   XRaiseWindow(d, e->xbutton.subwindow);
   mouse = e->xbutton;
 }
@@ -163,7 +164,7 @@ void win_add(Window w) {
     list->prev = list->next = list;
   }
 
-  ws_save(ws);
+  WS_SAVE(ws);
 }
 
 void win_del(Window w) {
@@ -184,7 +185,7 @@ void win_del(Window w) {
       x->prev->next = x->next;
 
     free(x);
-    ws_save(ws);
+    WS_SAVE(ws);
 }
 
 void win_kill(const Arg arg) {
@@ -196,7 +197,7 @@ void win_center(const Arg arg) {
   if (!cur)
     return;
 
-  win_size(cur->w, &(int){0}, &(int){0}, &ww, &wh);
+  WIN_SIZE(cur->w, &(int){0}, &(int){0}, &ww, &wh);
   XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
 }
 
@@ -205,7 +206,7 @@ void win_fs(const Arg arg) {
     return;
 
   if ((cur->f = cur->f ? 0 : 1)) {
-    win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
+    WIN_SIZE(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
     XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
 
   } else {
@@ -219,14 +220,14 @@ void win_to_ws(const Arg arg) {
   if (arg.i == tmp)
     return;
 
-  ws_sel(arg.i);
+  WS_SEL(arg.i);
   win_add(cur->w);
-  ws_save(arg.i);
+  WS_SAVE(arg.i);
 
-  ws_sel(tmp);
+  WS_SEL(tmp);
   win_del(cur->w);
   XUnmapWindow(d, cur->w);
-  ws_save(tmp);
+  WS_SAVE(tmp);
 
   if (list)
     win_focus(list);
@@ -254,18 +255,18 @@ void ws_go(const Arg arg) {
   if (arg.i == ws)
     return;
 
-  ws_save(ws);
-  ws_sel(arg.i);
+  WS_SAVE(ws);
+  WS_SEL(arg.i);
 
     for
       win XMapWindow(d, c->w);
 
-    ws_sel(tmp);
+    WS_SEL(tmp);
 
     for
       win XUnmapWindow(d, c->w);
 
-    ws_sel(arg.i);
+    WS_SEL(arg.i);
 
     if (list)
       win_focus(list);
@@ -289,7 +290,7 @@ void map_request(XEvent *e) {
   Window w = e->xmaprequest.window;
 
   XSelectInput(d, w, StructureNotifyMask | EnterWindowMask);
-  win_size(w, &wx, &wy, &ww, &wh);
+  WIN_SIZE(w, &wx, &wy, &ww, &wh);
   win_add(w);
   cur = list->prev;
 
